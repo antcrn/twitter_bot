@@ -15,13 +15,13 @@ client = Twitter::REST::Client.new do |config|
 end
 
 def login_twitter_streaming
-  client = Twitter::Streaming::Client.new do |config|
+  client2 = Twitter::Streaming::Client.new do |config|
       config.consumer_key        = ENV["TWITTER_API_KEY"]
       config.consumer_secret     = ENV["TWITTER_API_SECRET"]
       config.access_token        = ENV["TWITTER_ACCESS_TOKEN"]
       config.access_token_secret = ENV["TWITTER_ACCESS_TOKEN_SECRET"]
     end
-    return client
+    return client2
   end
 
 ################
@@ -76,4 +76,4 @@ def live_follow_favorite(topics)
     end
 end
 
-follow("#javascript")
+live_follow_favorite("#THP")
