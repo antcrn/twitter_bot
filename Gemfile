@@ -1,5 +1,5 @@
 gem 'dotenv'
-gem 'twitter', '~> 6.2'
-gem 'pry', '~> 0.14.1'
-gem 'rspec', '~> 3.10'
+gem 'twitter'
+gem 'pry'
+gem 'rspec'
 gem 'rubocop', '~> 1.18', '>= 1.18.3'

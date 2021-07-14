@@ -61,7 +61,7 @@ GEM
     ruby-progressbar (1.11.0)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
-    twitter (6.2.0)
+    twitter (7.0.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.11)
@@ -82,10 +82,10 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  pry (~> 0.14.1)
-  rspec (~> 3.10)
+  pry
+  rspec
   rubocop (~> 1.18, >= 1.18.3)
-  twitter (~> 6.2)
+  twitter
 
 BUNDLED WITH
    2.1.4
