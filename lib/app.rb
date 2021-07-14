@@ -1,4 +1,5 @@
 require 'dotenv'# Appelle la gem Dotenv
+require 'pry'
 
 Dotenv.load('.env') # Ceci appelle le fichier .env (situé dans le même dossier que celui d'où tu exécute app.rb)
 # et grâce à la gem Dotenv, on importe toutes les données enregistrées dans un hash ENV
@@ -8,3 +9,17 @@ puts ENV['TWITTER_API_SECRET']
 
 #Autre exemple 
 puts ENV['BEST_WEBSITE_EVER']
+
+p 'hello'
+=begin
+    
+    binding.pry # On lance PRY au milieu de la méthode
+   
+=end    
+
+def hello
+    return "Hello world!"
+    binding.pry
+end
+
+hello
